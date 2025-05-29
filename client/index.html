@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1-on-1 Video Call</title>
+  </head>
+  <body>
+    <h2>1-on-1 Video Call</h2>
+
+    <div>
+      <label>Your ID:</label>
+      <input id="ownId" readonly />
+      <br />
+      <label>Call User ID:</label>
+      <input id="targetId" />
+      <button id="callBtn">Call</button>
+    </div>
+
+    <video id="localVideo" autoplay muted playsinline></video>
+    <video id="remoteVideo" autoplay playsinline></video>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
